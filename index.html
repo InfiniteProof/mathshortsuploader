@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MathShortsUploader</title>
+  <title>TikTok Uploader</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -47,52 +47,49 @@
     <a href="privacy.html">Privacy Policy</a>
   </nav>
 
-  <h1>MathShortsUploader</h1>
+  <h1>TikTok Uploader</h1>
   <p>
-    MathShortsUploader automatically produces original animated math explainer videos
-    and publishes them to authorized social media accounts on a scheduled basis. It is
-    operated by a single account holder (the developer) and connects only to that
-    person's own TikTok, YouTube, and Instagram accounts.
+    TikTok Uploader is a private tool built and operated by a single developer. It
+    publishes pre-made videos to that developer's own TikTok account using TikTok's
+    official Login Kit and Content Posting API. It is not distributed to anyone else,
+    and no other person can use it to post to TikTok.
   </p>
 
   <h2>What it does</h2>
   <p>
-    The app uses mathematical animation software (Manim) and AI-assisted scripting to
-    generate a short video explaining one math concept, with synthesized voiceover
-    narration. Each video is rendered locally on the operator's own device. Before any
-    video is published, the operator reviews it. For TikTok specifically, publishing
-    is completed through a review screen that requires the operator to manually choose
-    a privacy setting, manually choose who can comment, duet, or stitch the video, and
-    confirm consent before the video is sent to TikTok.
+    The operator authorizes their own TikTok account using TikTok Login Kit (OAuth 2.0).
+    Once authorized, a review screen shows the video that is about to be posted. Before
+    publishing, the operator must manually:
   </p>
-
-  <h2>How TikTok is used</h2>
+  <ul>
+    <li>Select a privacy level for the post (no option is selected by default)</li>
+    <li>Choose whether comments, duets, and stitches are allowed (all off by default,
+        and disabled entirely if TikTok reports them as turned off in the account's own
+        settings)</li>
+    <li>Confirm consent to publish</li>
+  </ul>
   <p>
-    The app uses TikTok Login Kit so the operator can authorize their own TikTok account
-    via OAuth 2.0. Once authorized, the app uses the Content Posting API (Direct Post,
-    file upload) to publish videos to that same account. No other TikTok account can be
-    connected or posted to. Before each TikTok post, the app retrieves the account's
-    current posting permissions from TikTok and presents them as the manual options
-    described above.
+    Only after all of these are manually set does the Publish button become available.
+    The video is then sent to TikTok using the Content Posting API (Direct Post).
   </p>
 
   <h2>Who uses it</h2>
   <p>
-    MathShortsUploader is operated by its developer for their own educational video
-    channel. It is not offered as a public multi-user service. Each connection requires
-    the account owner to personally complete TikTok's OAuth authorization; the app never
-    accesses any account that has not gone through that authorization.
+    TikTok Uploader is used only by its developer, for their own TikTok account. It is
+    not offered to the public, not sold, and not shared. It connects to exactly one
+    TikTok account: the one its operator personally authorizes through TikTok's login
+    flow.
   </p>
 
-  <h2>Platform integrations</h2>
+  <h2>TikTok integration</h2>
   <ul>
-    <li><strong>TikTok</strong> — Login Kit (OAuth 2.0) and Content Posting API (Direct Post / video.publish)</li>
-    <li><strong>YouTube</strong> — YouTube Data API v3 (video upload)</li>
-    <li><strong>Instagram</strong> — Instagram Graph API (video publish)</li>
+    <li><strong>Login Kit</strong> — authorizes the operator's TikTok account (OAuth 2.0)</li>
+    <li><strong>Content Posting API</strong> — publishes video content directly to that
+        account (Direct Post)</li>
   </ul>
 
   <footer>
-    MathShortsUploader &mdash; a personal educational video automation project.<br />
+    TikTok Uploader &mdash; a personal project.<br />
     Contact: <a href="mailto:infiniteproof9@gmail.com">infiniteproof9@gmail.com</a>
   </footer>
 

@@ -1,34 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>MathShortsUploader</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body { font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 700px; margin: 60px auto; padding: 0 20px; line-height: 1.6; color: #222; }
-  h1 { font-size: 28px; }
-  nav a { margin-right: 20px; color: #2266cc; text-decoration: none; }
-  footer { margin-top: 60px; font-size: 13px; color: #777; }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MathShortsUploader</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      color: #222;
+      line-height: 1.7;
+    }
+    nav {
+      margin-bottom: 40px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 16px;
+    }
+    nav a {
+      margin-right: 24px;
+      text-decoration: none;
+      color: #0055cc;
+      font-weight: 500;
+    }
+    nav a:hover { text-decoration: underline; }
+    h1 { font-size: 2rem; margin-bottom: 8px; }
+    h2 { font-size: 1.2rem; margin-top: 36px; color: #333; }
+    p { margin: 12px 0; }
+    ul { margin: 12px 0; padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    footer {
+      margin-top: 60px;
+      padding-top: 16px;
+      border-top: 1px solid #e0e0e0;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>MathShortsUploader</h1>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="terms.html">Terms of Service</a>
     <a href="privacy.html">Privacy Policy</a>
   </nav>
 
-  <p>MathShortsUploader is a personal automated content tool that creates short, animated math
-  explainer videos and publishes them to a single, self-owned social media account on a fixed
-  weekly schedule.</p>
+  <h1>MathShortsUploader</h1>
+  <p>
+    MathShortsUploader is a content automation platform for creating and publishing
+    animated math explainer videos to social media. It enables authorized users to
+    generate short-form educational videos and publish them directly to their own
+    connected social media accounts.
+  </p>
 
-  <p>Each video is generated using mathematical animation software (Manim) and a synthesized
-  voiceover, covering one math concept per video in a visual, intuitive style.</p>
+  <h2>What it does</h2>
+  <p>
+    The platform uses mathematical animation software (Manim) and AI-assisted scripting
+    to produce high-quality, visually engaging videos covering one math concept per video.
+    Each video is rendered locally and published to the user's authorized accounts via
+    official platform APIs.
+  </p>
 
-  <p>This tool publishes only to accounts that the operator owns and has personally authorized.
-  It does not access or manage any other user's data, account, or content.</p>
+  <h2>Key features</h2>
+  <ul>
+    <li>Automated video generation from a topic library</li>
+    <li>Synthesized voiceover narration using neural text-to-speech</li>
+    <li>AI-generated titles, descriptions, and tags optimized per platform</li>
+    <li>Direct publishing to TikTok, YouTube, and Instagram via official APIs</li>
+    <li>Review workflow before any content is published</li>
+    <li>Scheduling and topic-deduplication to maintain consistent output</li>
+  </ul>
 
-  <footer>MathShortsUploader — an independent educational content project.</footer>
+  <h2>Who it's for</h2>
+  <p>
+    MathShortsUploader is designed for educators, content creators, and developers who
+    want to produce and distribute educational math content at scale. Users connect their
+    own social media accounts and publish only to accounts they personally own and have
+    authorized.
+  </p>
+
+  <h2>Platform integrations</h2>
+  <ul>
+    <li><strong>TikTok</strong> — Content Posting API (video upload and publishing)</li>
+    <li><strong>YouTube</strong> — YouTube Data API v3 (video upload)</li>
+    <li><strong>Instagram</strong> — Instagram Graph API (video publish)</li>
+  </ul>
+
+  <footer>
+    MathShortsUploader &mdash; an independent educational content platform.<br />
+    Contact: <a href="mailto:infiniteproof9@gmail.com">infiniteproof9@gmail.com</a>
+  </footer>
+
 </body>
 </html>

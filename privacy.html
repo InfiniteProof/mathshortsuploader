@@ -1,142 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy - TikTok Uploader</title>
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 40px 24px;
-      color: #222;
-      line-height: 1.7;
-    }
-    nav {
-      margin-bottom: 40px;
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 16px;
-    }
-    nav a {
-      margin-right: 24px;
-      text-decoration: none;
-      color: #0055cc;
-      font-weight: 500;
-    }
-    nav a:hover { text-decoration: underline; }
-    h1 { font-size: 2rem; margin-bottom: 4px; }
-    .updated { font-size: 0.85rem; color: #888; margin-bottom: 32px; }
-    h2 { font-size: 1.15rem; margin-top: 36px; color: #333; }
-    p { margin: 12px 0; }
-    ul { margin: 12px 0; padding-left: 20px; }
-    li { margin-bottom: 6px; }
-    footer {
-      margin-top: 60px;
-      padding-top: 16px;
-      border-top: 1px solid #e0e0e0;
-      font-size: 0.85rem;
-      color: #666;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - TikTok Uploader</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #fafaf8;
+    color: #15171a;
+    line-height: 1.7;
+  }
+  nav {
+    border-bottom: 1px solid #e4e2dd;
+    padding: 14px 24px;
+    display: flex;
+    gap: 24px;
+    font-size: 0.88rem;
+  }
+  nav a { color: #555; text-decoration: none; }
+  nav a:hover { color: #15171a; }
+  .content {
+    max-width: 640px;
+    margin: 48px auto;
+    padding: 0 24px 80px;
+  }
+  .eyebrow {
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #fe2c55;
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+  .updated {
+    font-size: 0.82rem;
+    color: #888;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 32px 0 10px;
+  }
+  p {
+    font-size: 0.92rem;
+    color: #333;
+    margin-bottom: 12px;
+  }
+  ul {
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+  li {
+    font-size: 0.92rem;
+    color: #333;
+    margin-bottom: 6px;
+  }
+  .highlight {
+    background: white;
+    border: 1px solid #e4e2dd;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 24px 0;
+    font-size: 0.9rem;
+    color: #444;
+  }
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 0.8rem;
+    color: #aaa;
+    border-top: 1px solid #e4e2dd;
+  }
+  footer a { color: #888; }
+</style>
 </head>
 <body>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="terms.html">Terms of Service</a>
-    <a href="privacy.html">Privacy Policy</a>
-  </nav>
+<nav>
+  <a href="index.html"><strong>TikTok Uploader</strong></a>
+  <a href="terms.html">Terms of Service</a>
+  <a href="privacy.html">Privacy Policy</a>
+</nav>
 
+<div class="content">
+  <div class="eyebrow">Legal</div>
   <h1>Privacy Policy</h1>
   <p class="updated">Last updated: June 2026</p>
 
-  <p>
-    This Privacy Policy describes how TikTok Uploader ("the app", "we", "us") handles
-    information. TikTok Uploader is a private tool operated by a single developer for
-    their own TikTok account. It is not distributed or made available to anyone else.
-  </p>
+  <div class="highlight">
+    TikTok Uploader is a self-hosted, open source tool. Each person who uses it runs their own copy on their own device, with their own TikTok app credentials. There is no central server, no shared account, and no data collected by this project.
+  </div>
 
-  <h2>1. Information We Collect From Website Visitors</h2>
-  <p>
-    This website does not collect, store, or transmit personal data from visitors.
-  </p>
+  <h2>1. How the app works</h2>
+  <p>TikTok Uploader is downloaded and run locally by each user on their own computer. It is not a hosted service. When you run TikTok Uploader:</p>
   <ul>
-    <li>No cookies, analytics trackers, or advertising scripts are used on this website.</li>
-    <li>No names, email addresses, or other identifying information are collected through
-        this website.</li>
-    <li>No information about website visitors is logged or stored.</li>
+    <li>The app runs entirely on your own device.</li>
+    <li>You supply your own TikTok app credentials (client key and client secret) from the TikTok Developer Portal.</li>
+    <li>You authorize your own TikTok account through TikTok's official OAuth 2.0 login flow.</li>
+    <li>Your access token is stored only on your own device, in a local file.</li>
+    <li>No data is sent to or stored on any server operated by this project.</li>
   </ul>
 
-  <h2>2. TikTok Account Access (Login Kit)</h2>
-  <p>
-    The app uses TikTok Login Kit so its operator can authorize their own TikTok account
-    through TikTok's official OAuth 2.0 flow.
-  </p>
+  <h2>2. Information collected by this website</h2>
+  <p>This website (infiniteproof.github.io/TikTok-Uploader) is a static informational page hosted on GitHub Pages. It does not collect, store, or process any personal data. No cookies, analytics, or tracking scripts are used.</p>
+
+  <h2>3. TikTok account access</h2>
+  <p>When you run TikTok Uploader on your own device, it uses TikTok Login Kit to authenticate your TikTok account via OAuth 2.0. The following scopes are used:</p>
   <ul>
-    <li>The app connects to exactly one TikTok account: the one personally authorized by
-        its operator through TikTok's official login flow.</li>
-    <li>No other TikTok account, and no data belonging to any other TikTok user, is
-        accessed, processed, or stored.</li>
-    <li>The <code>user.info.basic</code> scope is used only to confirm the identity of the
-        authorized account after login.</li>
-    <li>Access tokens are stored locally on the operator's own device and are never sent
-        to or stored on any external server.</li>
+    <li><strong>user.info.basic</strong> — used only to confirm the identity of the account you have authorized, so the app can display your TikTok username and avatar on the review screen.</li>
+    <li><strong>video.publish</strong> — used to publish videos directly to your TikTok profile via TikTok's Content Posting API (Direct Post). The app requires you to manually select a privacy level and confirm consent before any video is published.</li>
   </ul>
+  <p>The app only accesses the TikTok account you personally authorize. It does not access any other TikTok user's account, data, followers, messages, or content.</p>
 
-  <h2>3. TikTok Content Posting API</h2>
-  <p>
-    The app uses the <code>video.publish</code> scope to post videos directly (Direct
-    Post) to the authorized account. Before each post, the app requests the account's
-    current posting permissions (which privacy levels are available, and whether
-    comments, duets, and stitches are enabled) and presents these as choices the operator
-    must set manually; nothing is selected automatically. The app does not access TikTok
-    follower information, messages, or any data beyond what is required to complete a
-    post. Data returned by the TikTok API is used only to confirm whether a post
-    succeeded and is not stored beyond the current session.
-  </p>
+  <h2>4. Video content</h2>
+  <p>Videos are stored locally on your own device. They are sent directly from your device to TikTok's API when you publish. No video content passes through or is stored on any server operated by this project.</p>
 
-  <h2>4. Video Content</h2>
-  <p>
-    Videos are stored locally on the operator's own device before posting. No video
-    content is uploaded to or stored on any external server operated by this app. Videos
-    are sent directly from the operator's device to TikTok's API.
-  </p>
+  <h2>5. Credentials and tokens</h2>
+  <p>Your TikTok API credentials and access tokens are stored only on your own device as local files. They are never transmitted to this project or any third party outside of TikTok's own API. If you believe your credentials have been compromised, revoke access immediately through TikTok's developer or account security settings.</p>
 
-  <h2>5. TikTok's Own Policies</h2>
-  <p>
-    Use of TikTok through this app is also subject to TikTok's own Privacy Policy and
-    Terms of Service. This app is not responsible for TikTok's data practices.
-  </p>
+  <h2>6. TikTok's own privacy practices</h2>
+  <p>When you use TikTok through this app, TikTok's own Privacy Policy and Terms of Service also apply. This project is not affiliated with or endorsed by TikTok.</p>
 
-  <h2>6. Data Security</h2>
-  <p>
-    API tokens and access credentials are stored only on the operator's local device. If
-    credentials are believed to be compromised, access should be revoked immediately
-    through TikTok's developer or account security settings.
-  </p>
+  <h2>7. Children's privacy</h2>
+  <p>This app is not directed at children under the age of 13. It does not knowingly collect any information from children under 13.</p>
 
-  <h2>7. Children's Privacy</h2>
-  <p>
-    This app is not directed at children under the age of 13. We do not knowingly collect
-    any information from children under 13.
-  </p>
-
-  <h2>8. Changes to This Policy</h2>
-  <p>
-    This Privacy Policy may be updated from time to time. Any changes will be reflected
-    on this page with an updated date.
-  </p>
+  <h2>8. Changes to this policy</h2>
+  <p>This Privacy Policy may be updated from time to time. Any changes will be reflected on this page with an updated date.</p>
 
   <h2>9. Contact</h2>
-  <p>
-    For privacy-related questions, contact:
-    <a href="mailto:infiniteproof9@gmail.com">infiniteproof9@gmail.com</a>
-  </p>
+  <p>For privacy-related questions, contact: <a href="mailto:infiniteproof9@gmail.com">infiniteproof9@gmail.com</a></p>
+</div>
 
-  <footer>
-    TikTok Uploader &mdash; a personal project.
-  </footer>
+<footer>
+  TikTok Uploader — open source, self-hosted &nbsp;·&nbsp;
+  <a href="terms.html">Terms</a> &nbsp;·&nbsp;
+  <a href="privacy.html">Privacy</a> &nbsp;·&nbsp;
+  <a href="mailto:infiniteproof9@gmail.com">Contact</a>
+</footer>
 
 </body>
 </html>
